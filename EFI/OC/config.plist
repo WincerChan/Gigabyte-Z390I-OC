@@ -327,6 +327,7 @@
 	<dict>
 		<key>BlessOverride</key>
 		<array>
+			<string>\EFI\Microsoft\Boot\bootmgfw.efi</string>
 		</array>
 		<key>Boot</key>
 		<dict>
@@ -335,15 +336,15 @@
 			<key>HibernateMode</key>
 			<string>None</string>
 			<key>HideAuxiliary</key>
-			<false/>
-			<key>HideSelf</key>
 			<true/>
+			<key>HideSelf</key>
+			<false/>
 			<key>PickerAttributes</key>
 			<integer>0</integer>
 			<key>PickerAudioAssist</key>
 			<false/>
 			<key>PickerMode</key>
-			<string>Builtin</string>
+			<string>External</string>
 			<key>PollAppleHotKeys</key>
 			<true/>
 			<key>ShowPicker</key>
@@ -373,11 +374,11 @@
 			<key>AuthRestart</key>
 			<false/>
 			<key>ExposeSensitiveData</key>
-			<integer>3</integer>
+			<integer>2</integer>
 			<key>HaltLevel</key>
 			<integer>2147483648</integer>
 			<key>ScanPolicy</key>
-			<integer>524547</integer>
+			<integer>525571</integer>
 			<key>Vault</key>
 			<string>Optional</string>
 		</dict>
@@ -394,21 +395,6 @@
 				<string>UEFI Shell</string>
 				<key>Path</key>
 				<string>OpenShell.efi</string>
-			</dict>
-		</array>
-		<key>Entries</key>
-		<array>
-			<dict>
-				<key>Arguments</key>
-				<string></string>
-				<key>Comment</key>
-				<string>Windows 10</string>
-				<key>Enabled</key>
-				<true/>
-				<key>Name</key>
-				<string>Windows 10</string>
-				<key>Path</key>
-				<string>PciRoot(0x0)/Pci(0x1D,0x0)/Pci(0x0,0x0)/NVMe(0x1,9C-9A-72-44-8B-44-1B-00)/HD(1,GPT,759EF2B0-A9DC-4F81-94A5-A365BC560C15,0x28,0x64000)/\EFI\Microsoft\Boot\bootmgfw.efi</string>
 			</dict>
 		</array>
 	</dict>
@@ -441,7 +427,7 @@
 			<key>AdviseWindows</key>
 			<true/>
 			<key>MLB</key>
-			<string>XXXXXXXXXXXXx</string>
+			<string>XXXXXXXXXXXX</string>
 			<key>ROM</key>
 			<data>AQIDBAUG</data>
 			<key>SpoofVendor</key>
@@ -449,9 +435,9 @@
 			<key>SystemProductName</key>
 			<string>iMacPro1,1</string>
 			<key>SystemSerialNumber</key>
-			<string>XXXXXXXXXXXX</string>
+			<string>XXXXXXXXXXXXX</string>
 			<key>SystemUUID</key>
-			<string>XXXXXXXXXXXXXXXXXXXX</string>
+			<string>XXXXXXXXXXXXXXX</string>
 		</dict>
 		<key>UpdateDataHub</key>
 		<true/>
@@ -489,7 +475,7 @@
 			<string>OpenRuntime.efi</string>
 			<string>HfsPlus.efi</string>
 			<string>#OpenCanopy.efi</string>
-			<string>#NdkBootPicker.efi</string>
+			<string>NdkBootPicker.efi</string>
 			<string>OpenUsbKbDxe.efi</string>
 		</array>
 		<key>Input</key>
