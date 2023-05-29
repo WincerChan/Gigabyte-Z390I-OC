@@ -1,1 +1,0 @@
-此文件夹是 OpenCore 的主题文件夹。如果开启了 NdkBootPicker.efi，需要在此文件夹中放入主题图片，请至 NdkBootPicker 的仓库下载。
